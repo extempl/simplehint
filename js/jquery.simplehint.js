@@ -6,9 +6,13 @@
 
 (function($) {
 
-	var $hintBlock = $('<div />', {id: 'hintBlock'}).appendTo('body');
-	var $body = $(body);
-	var bodyDim = [$body.outerWidth(), $body.outerHeight()];
+	var $body, bodyDim, $hintBlock;
+	
+	$(function () {
+		$body = $(document.body);
+		bodyDim = [$body.outerWidth(), $body.outerHeight()];
+		$hintBlock = $('<div />', {id: 'hintBlock'}).appendTo($body);
+	});
 
 	var startShowHintWindow = function($elem, options, attributes) {
 
@@ -18,12 +22,11 @@
 		$elem
 			.attr(attributes, '')
 			.data('contentSrc', contentSrc)
-			.data('tm',setTimeout(function() {
+			.data('tm', setTimeout(function() {
 				$hintBlock
-					.html(contentSrc.replace(new RegExp(/  /g), '<br />'))
+					.html(contentSrc.replace(/  /g, '<br />'))
 					.fadeIn(100);
 			}, 500));
-		return $elem;
 
 	};
 
@@ -34,7 +37,6 @@
 			$hintBlock.fadeOut(100);
 			$elem.attr(attributes, $elem.data('contentSrc'));
 		}
-		return $elem;
 
 	};
 
@@ -50,7 +52,6 @@
 						e.pageY - $hintBlock.outerHeight() - 10 :
 						e.pageY + 10 + 'px'
 			});
-		return $hintBlock;
 
 	};
 
@@ -71,7 +72,6 @@
 				)
 				.mousemove(function(e) {showHintWindow(e)});
 		});
-		return this;
 	};
 
 })(jQuery);
