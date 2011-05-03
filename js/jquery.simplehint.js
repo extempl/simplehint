@@ -43,15 +43,15 @@
 	var showHintWindow = function(e) {
 
 		$hintBlock.css({
-				left:
-					(e.pageX + $hintBlock.outerWidth() + 10) > bodyDim[0] ?
-						e.pageX - $hintBlock.outerWidth() - 10 :
-						e.pageX + 10 + 'px',
-				top :
-					(e.pageY + $hintBlock.outerHeight() + 10) > bodyDim[1] ?
-						e.pageY - $hintBlock.outerHeight() - 10 :
-						e.pageY + 10 + 'px'
-			});
+			left:
+				(e.pageX + $hintBlock.outerWidth() + 10) > bodyDim[0] ?
+					e.pageX - $hintBlock.outerWidth() - 10 :
+					e.pageX + 10 + 'px',
+			top :
+				(e.pageY + $hintBlock.outerHeight() + 10) > bodyDim[1] ?
+					e.pageY - $hintBlock.outerHeight() - 10 :
+					e.pageY + 10 + 'px'
+		});
 
 	};
 
