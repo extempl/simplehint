@@ -18,6 +18,9 @@
 	</script>
 </head>
 <body>
+<header>
+	<p class="preface">This is the demo of <a href="https://github.com/extempl/simplehint">SimpleHint jQuery plugin</a></p>
+</header>
 <div class="main-block block-list">
     <ul class="inside-block block-list">
         <li><a href="op" title>1asdasdad</a></li>
