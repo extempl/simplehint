@@ -1,6 +1,6 @@
 /*************************************************
 **  jQuery SimpleHint version 1.2.0
-**  copyright Anton Konovalov, licensed GPL
+**  copyright Anton Konovalov, licensed GPL & MIT
 **  http://extempl.com/
 **************************************************/
 
