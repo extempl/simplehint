@@ -1,5 +1,5 @@
 /*************************************************
-**  jQuery SimpleHint version 1.2.0
+**  jQuery SimpleHint version 2.0.0
 **  copyright Anton Konovalov, licensed GPL & MIT
 **  http://extempl.com/
 **************************************************/
