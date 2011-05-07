@@ -29,19 +29,24 @@ How it work
 -----------
 
 For simple replacement you don't need anithing, will be use default title attribute:
+
 	<div title="Some text"></div>
 
 For wide (non-autobreakable content), which limited by width option (200px by default) use `data-hint-mode="wide"`:
+
 	<div data-hint-mode="wide" title="Some very very looooooooooooooong text"></div>
 
 For set `wide` to all titles use `wide: true` in `initHint` params
 
 For use your custom breaklines use double-spacebar instead (if javascript is blocked on client machine it will be only double-spacebar):
+
 	<div title="first line  second line  third line"></div>
 
 For set tooltip content as image (or any html-code, as you wish) simply type it into `title`:
+
 	<div title="<img src='http://www.google.com/logos/classicplus.png' />" data-hint-mode="wide"></div>
 
 If you afraid, that JavaScript is may be disabled, you can use non-integrated mode (`$.initHint({integrated:false})`) and if JavaScript is enabled - it will be work as standart `title`, if not - nothing will happend.
 It was maked for html-code, which with disabled JavaScript float with text `<img src='http://www.google.com/logos/classicplus.png' />`. Not nice, doesn't it?:
+	
 	<div data-hint-value="<img src='http://www.google.com/logos/classicplus.png' />" data-hint-mode="wide"></div>
