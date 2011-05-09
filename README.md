@@ -4,7 +4,7 @@ SimpleHint plugin
 This is tooltip replacement for default title-tooltip with some expanded opportunities.
 
 
-To add script to your website add the nex lines in head-block:
+To add script to your website add the next lines in head-block:
 
 	<script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="jquery.simplehint.min.js"></script>
