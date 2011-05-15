@@ -10,9 +10,9 @@
 	<script type="text/javascript">
 		$(function() {
 			$.initHint({
-				wide      : <?=($_GET['wide'] == 1 ? 'true' : 'false')?>,       // false by default, if true - then all hints will be stretchable
-				width     : '<?=($_GET['width'] ? $_GET['width'] : '200px')?>', // 200px by default. When it not stretchable and text length > than 25, then block will have fixed width
-				integrated: <?=($_GET['integrated'] == 0 ? 'false' : 'true')?>  // true by default. If set true, then will use title attributes, if false - data-hint-value attributes
+				wide      : <?=(isset($_GET['wide']) && $_GET['wide'] == 1 ? 'true' : 'false')?>,       // false by default, if true - then all hints will be stretchable
+				width     : '<?=(isset($_GET['width']) && $_GET['width'] ? $_GET['width'] : '200px')?>', // 200px by default. When it not stretchable and text length > than 25, then block will have fixed width
+				integrated: <?=(isset($_GET['integrated']) && $_GET['integrated'] == 0 ? 'false' : 'true')?>  // true by default. If set true, then will use title attributes, if false - data-hint-value attributes
 			})
 	    });
 	</script>
